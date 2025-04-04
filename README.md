@@ -10,7 +10,18 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    npm install
    ```
 
-2. Start the app
+2. Set up your OpenAI API key
+   -  Rename the .env.example file to .env
+   -  Paste your OpenAI API Key:
+
+   ```bash
+   OPENAI_API_KEY=sk-your-key-here
+   ```
+   -  Then in app.json, add the same key under extra:
+   "extra": {
+      "OPENAI_API_KEY": "sk-your-key-here"
+   }
+3. Start the app
 
    ```bash
     npx expo start
